@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "GetAllOrders";
+}
+
+<h2>GetAllOrders</h2>
+
+@model IEnumerable<SEDC.PizzaApp.Models.Order>
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Title
+        <hr />
+    </div>
+}
