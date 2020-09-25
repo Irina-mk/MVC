@@ -1,0 +1,13 @@
+﻿
+@model Order
+
+
+<h3>Order no. @Model.Id</h3>
+<p>Pizza: @Model.Pizza.Name</p>
+<p>Price: @Model.Price</p>
+  @Html.ActionLink("Details", "Details", "Order", new { id = Model.Id} , new { @class = "btn btn-info"})
+
+
+
+ 
+<img src="https://www.cicis.com/wp-content/uploads/2019/04/pizza_categoryheader.png" alt="Pizza" height="50" />

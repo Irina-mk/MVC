@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+@model OrderDetailsViewModel
+
+
+<h2>
+    @*@Html.Display("Title");*@
+    @Html.LabelFor(x => x.Name)
+    @Html.DisplayFor(x => x.Name)
+
+</h2>
+<hr />
+
+@Html.HiddenFor(x => x.Id)
+
+@Html.LabelFor(x => x.User)
+<p> @Html.DisplayFor(x => x.User)</p>
+
+@Html.LabelFor(x => x.Size)
+<p> @Html.DisplayFor(x => x.Size)</p>
+@Html.LabelFor(x => x.Price)
+<p>@Html.DisplayFor(x => x.Price)</p>
+
+@Html.LabelFor(x => x.Delivered)
+@if (Model.Delivered)
+{<p>Delivered</p>}
+else
+{<p>Not delivered </p> }
+
+ 
+
+
